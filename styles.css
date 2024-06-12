@@ -6,13 +6,16 @@
 	--color-blue: #0ea5e9;
 	--color-white: white;
 	--color-grey: #e2e8f0;
+    --color-orange: #f59e0b;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 20% 4fr;
 	grid-template-rows: auto 1fr auto;
-
+    height: 100vh;
 	margin: 0;
 	padding: 0;
 }
@@ -25,10 +28,9 @@ img {
 .sidebar {
 	display: flex;
 	flex-direction: column;
+    position: fixed;
 
-	grid-row: 1 / span 3;
-
-	width: auto;
+	width: 20%;
 	height: 100vh;
 
 	padding-left: var(--section-padding);
@@ -42,8 +44,6 @@ img {
 	color: var(--color-white);
 
 	font-weight: bold;
-
-	border: 2px solid green;
 }
 
 ul {
@@ -53,20 +53,24 @@ ul {
 }
 
 header {
-	border: 2px solid blue;
+
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 
 	grid-row: 1;
+    grid-column: 2 / span 4;
 
 	padding-left: var(--section-padding);
 	padding-right: var(--section-padding);
 	padding-top: var(--section-padding);
 	box-sizing: border-box;
 
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+
 	font-weight: bold;
+    z-index: 1;
 }
 
 .header-top-container {
@@ -148,13 +152,52 @@ button:focus {
 }
 
 main {
-	border: 2px solid red;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 1fr;
 
 	padding-left: var(--section-padding);
 	padding-right: var(--section-padding);
 	box-sizing: border-box;
 
-	grid-row: 2 / span 2;
+	grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
 
     background-color: var(--color-grey);
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding-top: var(--section-padding);
+    padding-bottom: 1vh;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.project-card {
+    background-color: var(--color-white);
+    width: 15rem;
+    height: 6.25rem;
+    border-radius: 0.25rem;
+    border-left: 0.25rem solid var(--color-orange);
+}
+
+.announcements {
+
+}
+
+.trending {
+
 }
