@@ -7,6 +7,7 @@
 	--color-white: white;
 	--color-grey: #e2e8f0;
     --color-orange: #f59e0b;
+    --color-green: #4ade80;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -50,6 +51,10 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+li:hover {
+    color: var(--color-green);
 }
 
 header {
@@ -110,7 +115,7 @@ button {
 
 button:hover,
 button:focus {
-	background-color: #4ade80;
+	background-color: var(--color-green);
 }
 
 .header-bottom-container {
@@ -180,22 +185,68 @@ h2 {
     grid-row: span 2;
 }
 
-.card-container {
+.project-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    
+    padding-right: 1rem;
 }
+
 .project-card {
+    flex-direction: column;
+    display: flex;
+    flex: auto;
     background-color: var(--color-white);
     width: 15rem;
     height: 6.25rem;
     border-radius: 0.25rem;
     border-left: 0.25rem solid var(--color-orange);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h6,
+.project-card p {
+    margin: 0;
+    padding: 0;
+
+    margin: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+}
+
+.project-card:hover {
+    border-left: 0.25rem solid var(--color-green);
 }
 
 .announcements {
 
+}
+
+.announce-card-container {
+    background-color: var(--color-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    padding: 5px;
+}
+
+.announce-card {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    border-bottom: 1px solid darkgrey;
+}
+
+.announce-card:last-of-type {
+    border-bottom: none;
+}
+
+.announce-card h6,
+.announce-card p {
+    margin: 0;
+    padding: 0;
+
+    margin: 0.25rem 0.125rem;
+    font-size: 0.45rem;
 }
 
 .trending {
