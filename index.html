@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <nav>
-            <ul>
+        <nav class="sidebar">
+            <ul class="navgroup-1">
                 <li>Dashboard</li>
             </ul>
-            <ul>
+            <ul class="navgroup-2">
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
@@ -19,7 +19,7 @@
                 <li>Tasks</li>
                 <li>Communities</li>
             </ul>
-            <ul>
+            <ul class="navgroup-3">
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
@@ -28,18 +28,18 @@
         <header>
             <div class="header-top-container">
                 <div class="header-top-left">
-                    <img src="./images/magnify.svg" class="icon-search">
+                    <img src="./images/magnify.svg" class="icon-search" alt="Search Icon">
                     <input type="search" class="header-search-bar"/>
                 </div>
                 <div class="header-top-right">
-                    <img src="./images/bell-ring-outline.svg" class="icon-bell">
-                    <img src="./images/account-circle-outline.svg" class="icon-profile-small">
+                    <img src="./images/bell-ring-outline.svg" class="icon-bell" alt="Notification Bell">
+                    <img src="./images/account-circle-outline.svg" class="icon-profile-small" alt="Profile Icon">
                     <span>Saksham Powdel</span>
                 </div>
             </div>
             <div class="header-bottom-container">
                 <div class="header-bottom-left">
-                    <img src="./images/account-circle-outline.svg" class="icon-profile-large">
+                    <img src="./images/account-circle-outline.svg" class="icon-profile-large" alt="Profile Icon">
                     <div class="user-greeting">
                         <p>Hi there,</p>
                         <span>Saksham Powdel (@sak)</span>
@@ -52,5 +52,16 @@
                 </div>
             </div>
         </header>
+        <main class="main-container">
+            <section class="projects">
+                <h2>Your Projects</h2>
+            </section>
+            <section class="announcements">
+                <h2>Announcements</h2>
+            </section>
+            <section class="trending">
+                <h2>Trending</h2>
+            </section>
+        </main>
     </body>
 </html>
