@@ -217,15 +217,11 @@ h2 {
     border-left: 0.25rem solid var(--color-green);
 }
 
-.announcements {
-
-}
 
 .announce-card-container {
     background-color: var(--color-white);
     border-radius: 0.25rem;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-    width: fit-content;
     padding: 5px;
 }
 
@@ -249,6 +245,28 @@ h2 {
     font-size: 0.45rem;
 }
 
-.trending {
+.trend-card-container {
+    background-color: var(--color-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
 
+.trend-card {
+    display: flex;
+    flex: auto;
+    align-items: center;
+}
+
+.trend-card-content {
+    flex-direction: column;
+}
+
+.trend-card-content h6,
+.trend-card-content p {
+    margin: 0px;
+    padding: 0px;
+
+    margin: 0.25rem 0.125rem;
+    font-size: 0.45rem;
 }
