@@ -4,6 +4,7 @@
 	--color-blue: #0ea5e9;
 	--color-white: white;
 	--color-grey: #e2e8f0;
+    --color-dark-grey: #6b7280;
 	--color-orange: #f59e0b;
 	--color-green: #4ade80;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -167,6 +168,10 @@ main {
 	grid-row: 2 / span 1;
 	grid-column: 2 / span 1;
 	background-color: var(--color-grey);
+}
+
+main p {
+    color: var(--color-dark-grey); 
 }
 
 h2 {
