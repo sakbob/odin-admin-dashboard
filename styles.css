@@ -1,131 +1,160 @@
 :root {
-    font-size: clamp(8px, calc(16px + 1vw), 3vw);
+	font-size: clamp(8px, calc(12px + 1vw), 2.5vw);
 
-    --section-padding: clamp(8px, calc(16px + 1vw), 3vw);
+	--section-padding: clamp(2px, calc(10px + 1vw), 2vw);
+
+	--color-blue: #0ea5e9;
+	--color-white: white;
+	--color-grey: #e2e8f0;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: auto 1fr auto;
 
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 img {
-    height: 1rem;
-    width: auto;
+	height: 1rem;
+	width: auto;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    grid-row: 1 / 5;
+	grid-row: 1 / span 3;
 
-    width: auto;
-    height: 100vh;
+	width: auto;
+	height: 100vh;
 
-    padding-left: var(--section-padding);
-    padding-right: var(--section-padding);
-    padding-top: var(--section-padding);
+	padding-left: var(--section-padding);
+	padding-right: var(--section-padding);
+	padding-top: var(--section-padding);
+	box-sizing: border-box;
 
-    gap: 2rem;
+	gap: 2rem;
 
-    border: 2px solid green;
+	background-color: var(--color-blue);
+	color: var(--color-white);
+
+	font-weight: bold;
+
+	border: 2px solid green;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-    border: 2px solid blue;
+	border: 2px solid blue;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 
-    grid-row: 1 / 2;
+	grid-row: 1;
 
-    padding-left: var(--section-padding);
-    padding-right: var(--section-padding);
+	padding-left: var(--section-padding);
+	padding-right: var(--section-padding);
+	padding-top: var(--section-padding);
+	box-sizing: border-box;
+
+	font-weight: bold;
 }
 
 .header-top-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .header-top-left,
 .header-top-right {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.header-search-bar {
+	border-style: none;
+	background-color: var(--color-grey);
+	width: calc(8rem + 50vh);
+	height: 1.5rem;
+
+	border-radius: 1rem;
 }
 
 button {
-    font-size: 0.75rem;
-    border-style: none;
-    border-radius: 0.5rem;
-    padding: 0.1rem 0.2rem;
-    min-width: 4rem;
+	font-size: 0.75rem;
+	border-style: none;
+	border-radius: 0.5rem;
+	padding: 0.1rem 0.2rem;
+	min-width: 4rem;
 
-    background-color: #38bdf8;
-    color: white;
+	background-color: var(--color-blue);
+	color: var(--color-white);
 
-    font-weight: bold;
+	font-weight: bold;
 }
 
 button:hover,
 button:focus {
-    background-color: #4ade80;
+	background-color: #4ade80;
 }
 
 .header-bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header-bottom-left {
-    display: flex;
+	display: flex;
 }
 
 .user-greeting p {
-    padding: 0;
-    margin: 0;
-    font-size: 0.5rem;
+	padding: 0;
+	margin: 0;
+	font-size: 0.5rem;
 }
 
 .user-greeting {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	;
 }
 
 .header-bottom-right {
-    display: flex;
-    gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .icon-profile-large {
-    height:3rem;
+	height: 3rem;
 }
 
 .icon-profile-small {
-    height:2rem;
+	height: 2rem;
 }
 
 main {
-    border: 2px solid red;
+	border: 2px solid red;
 
-    padding-left: var(--section-padding);
-    padding-right: var(--section-padding);
+	padding-left: var(--section-padding);
+	padding-right: var(--section-padding);
+	box-sizing: border-box;
 
-    grid-row: 2 / 5;
+	grid-row: 2 / span 2;
+
+    background-color: var(--color-grey);
 }
