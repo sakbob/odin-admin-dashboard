@@ -29,6 +29,9 @@ img {
 
     padding-left: var(--section-padding);
     padding-right: var(--section-padding);
+    padding-top: var(--section-padding);
+
+    gap: 2rem;
 
     border: 2px solid green;
 }
@@ -65,14 +68,21 @@ header {
 }
 
 button {
-    font-size: 1rem;
+    font-size: 0.75rem;
     border-style: none;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    min-width: 4rem;
 
     background-color: #38bdf8;
-    border: 0.1rem solid black;
-    border-radius: 0.5rem;
+    color: white;
 
-    width: 4rem;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    background-color: #4ade80;
 }
 
 .header-bottom-container {
@@ -98,8 +108,17 @@ button {
     justify-content: center;;
 }
 
+.header-bottom-right {
+    display: flex;
+    gap: 1rem;
+}
+
 .icon-profile-large {
     height:3rem;
+}
+
+.icon-profile-small {
+    height:2rem;
 }
 
 main {
